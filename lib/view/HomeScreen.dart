@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                       horizontal: 14,
                       vertical: 10,
                     ),
-                    color: const Color(0xFFFFF3CD),
+                    color: Colors.yellow,
                     child: const Text(
                       'No internet connection',
                       style: TextStyle(

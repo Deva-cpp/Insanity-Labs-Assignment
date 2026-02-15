@@ -82,7 +82,7 @@ class _DetailMobileView extends StatelessWidget {
                     imageUrl: movie.poster ?? '',
                     fit: BoxFit.cover,
                     errorWidget: (_, __, ___) {
-                      return Container(color: const Color(0xFF1D1D1D));
+                      return Container(color: Colors.black);
                     },
                   ),
                 ),
@@ -146,10 +146,10 @@ class _DetailMobileView extends StatelessWidget {
                                 height: 42,
                                 width: 42,
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withValues(alpha: 0.14),
+                                  color: Colors.white.withAlpha(35),
                                   borderRadius: BorderRadius.circular(20),
                                   border: Border.all(
-                                    color: Colors.white.withValues(alpha: 0.2),
+                                    color: Colors.white.withAlpha(50),
                                   ),
                                 ),
                                 child: Icon(
@@ -157,7 +157,7 @@ class _DetailMobileView extends StatelessWidget {
                                       ? Icons.favorite
                                       : Icons.favorite_border,
                                   color: isFav
-                                      ? const Color(0xFFE53935)
+                                      ? Colors.red
                                       : Colors.white,
                                   size: 20,
                                 ),
@@ -193,7 +193,7 @@ class _DetailMobileView extends StatelessWidget {
                             '${movie.year ?? ''}  •  ${movie.rated ?? ''}  •  ${movie.runtime ?? ''}  •  IMDB ${movie.imdbRating ?? ''}',
                             style: TextStyle(
                               fontSize: 13,
-                              color: Colors.white.withValues(alpha: 0.85),
+                              color: Colors.white.withAlpha(170),
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -226,12 +226,11 @@ class _DetailMobileView extends StatelessWidget {
                                             vertical: 8,
                                           ),
                                           decoration: BoxDecoration(
-                                            color: const Color(0xFFF4F4F4),
+                                            color: Colors.grey,
                                             borderRadius:
                                                 BorderRadius.circular(18),
                                             border: Border.all(
-                                              color: Colors.black
-                                                  .withValues(alpha: 0.06),
+                                              color: Colors.black.withAlpha(15),
                                             ),
                                           ),
                                           child: Text(
@@ -302,7 +301,7 @@ class _DetailMobileView extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.fromLTRB(14, 12, 14, 12),
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFFF7F7F7),
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(16),
                                     border: Border.all(
                                       color: Colors.black.withValues(alpha: 0.06),
@@ -900,7 +899,7 @@ class _DetailMobileView extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.fromLTRB(14, 12, 14, 12),
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFFF7F7F7),
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(16),
                                     border: Border.all(
                                       color: Colors.black.withValues(alpha: 0.06),
@@ -991,7 +990,7 @@ class _DetailMobileView extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       decoration: BoxDecoration(
-        color: const Color(0xFFF7F7F7),
+        color: Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: Colors.black.withValues(alpha: 0.06)),
       ),

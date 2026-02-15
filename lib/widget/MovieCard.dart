@@ -46,7 +46,7 @@ class MovieCard extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    color: const Color(0xFFF2F2F2),
+                    color: Colors.grey,
                     child: CachedNetworkImage(
                       imageUrl: poster,
                       fit: BoxFit.cover,
@@ -95,13 +95,13 @@ class MovieCard extends StatelessWidget {
                   height: 34,
                   width: 34,
                   decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.92),
+                    color: Colors.white.withAlpha(234),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Icon(
                     isFav ? Icons.favorite : Icons.favorite_border,
                     size: 18,
-                    color: isFav ? const Color(0xFFE53935) : Colors.black87,
+                    color: isFav ? Colors.red : Colors.black87,
                   ),
                 ),
               ),

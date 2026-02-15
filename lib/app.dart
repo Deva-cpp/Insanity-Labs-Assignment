@@ -41,7 +41,7 @@ class App extends StatelessWidget {
             useMaterial3: true,
             scaffoldBackgroundColor: Colors.white,
             colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color(0xFF111111),
+              seedColor: Colors.black,
             ),
             textTheme: const TextTheme(
               bodyMedium: TextStyle(

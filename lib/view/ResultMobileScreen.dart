@@ -158,7 +158,7 @@ class _ResultMobileScreenState extends State<ResultMobileScreen> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFF4F4F4),
+                    color: Colors.grey,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
                       color: Colors.black.withValues(alpha: 0.06),
@@ -190,7 +190,7 @@ class _ResultMobileScreenState extends State<ResultMobileScreen> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFF4F4F4),
+                    color: Colors.grey,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
                       color: Colors.black.withValues(alpha: 0.06),
@@ -272,7 +272,7 @@ class _ResultMobileScreenState extends State<ResultMobileScreen> {
                                   height: 34,
                                   width: 34,
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFFF4F4F4),
+                                    color: Colors.grey,
                                     borderRadius: BorderRadius.circular(12),
                                     border: Border.all(
                                       color:

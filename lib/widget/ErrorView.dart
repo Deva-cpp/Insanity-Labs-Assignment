@@ -18,7 +18,7 @@ class ErrorView extends StatelessWidget {
           constraints: const BoxConstraints(maxWidth: 460),
           padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
           decoration: BoxDecoration(
-            color: const Color(0xFFF7F7F7),
+            color: Colors.white,
             borderRadius: BorderRadius.circular(18),
             border: Border.all(color: Colors.black.withValues(alpha: 0.06)),
           ),
@@ -61,7 +61,7 @@ class ErrorView extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: onTap,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF111111),
+                      backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
                       elevation: 0,
                       padding: const EdgeInsets.symmetric(vertical: 12),
